@@ -13,8 +13,100 @@ ul, ol, menu {
 
 a, button {
     text-decoration: none;
+    color: currentColor;
 }
 
 img {
     max-width: 100%;
 }
+
+/* LAYOUT */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* STYLE */
+
+header {
+    background-image: url(../img/jumbo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 90px;
+}
+
+.flag {
+ width: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* DEBUG */
+
+.debug section, .debug .container, .debug .row, .debug [class^=col] {
+    background-color: lightgray;
+    border: 1px dotted black;
+    padding: 20px;
+}
+
+.debug .container {
+    background-color: lightgreen;
+}
+
+.debug .row {
+    background-color: lightskyblue;
+}
+
+.debug [class^=col] {
+    background-color: salmon;
+    height: 200px;
+}
+
+.debug header [class^=col] {
+    height: 20px;
+}
+
+.debug footer [class^=col] {
+    height: 20px;
+}
+
+/* HEADER */
+
+header nav {
+    padding: 20px 0;
+}
+
+header nav .row {
+    justify-content: space-between;
+}
+
+header .lang-menu {
+    color: white;
+}
+
+header .flag {
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
+header .motto {
+    padding-bottom: 200px;
+}
+
+/* MAIN */
