@@ -73,13 +73,14 @@ img {
 
 .debug [class^=col] {
     background-color: salmon;
-    height: 200px;
+    height: 600px;
 }
 
 .debug header [class^=col] {
-    height: 20px;
+    height: auto;
 }
 
 .debug footer [class^=col] {
-    height: 20px;
+    height: auto;
 }
+
