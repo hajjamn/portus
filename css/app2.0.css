@@ -1,0 +1,85 @@
+/* RESET */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+
+a, button {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* LAYOUT */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+/* UTILITIES */
+
+.col-25 {
+    width: 25%;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-66 {
+    width: calc(2 * 100% / 3);
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* DEBUG */
+
+.debug section, .debug .container, .debug .row, .debug [class^=col] {
+    background-color: lightgray;
+    border: 1px dotted black;
+    padding: 20px;
+}
+
+.debug .container {
+    background-color: lightgreen;
+}
+
+.debug .row {
+    background-color: lightskyblue;
+}
+
+.debug [class^=col] {
+    background-color: salmon;
+    height: 200px;
+}
+
+.debug header [class^=col] {
+    height: 20px;
+}
+
+.debug footer [class^=col] {
+    height: 20px;
+}
