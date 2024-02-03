@@ -30,12 +30,21 @@ img {
 .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 5px;
 }
 
 /* UTILITIES */
 
+.col-25 {
+    width: 25%;
+}
+
 .col-33 {
     width: calc(100% / 3);
+}
+
+.col-50 {
+    width: 50%;
 }
 
 .col-66 {
@@ -110,6 +119,10 @@ main p {
 
 /* HEADER */
 
+header {
+    color: white;
+}
+
 header nav {
     padding: 20px 0;
 }
@@ -118,8 +131,10 @@ header nav .row {
     justify-content: space-between;
 }
 
-header .lang-menu {
-    color: white;
+header nav .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 header .flag {
@@ -146,7 +161,32 @@ main .row-reverse {
 }
 
 main .row {
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer section, footer nav {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .col-50 {
+    border-right: #004775 1px solid;
+}
+
+footer section .container {
+    border-bottom: #004775 1px solid;
+    padding: 40px 0;
+}
+
+footer nav .row {
+    justify-content: space-between;
+    align-items: flex-end;
+}
