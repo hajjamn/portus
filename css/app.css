@@ -32,6 +32,20 @@ img {
     flex-wrap: wrap;
 }
 
+/* UTILITIES */
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.col-66 {
+    width: calc(2 * 100% / 3);
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
 /* STYLE */
 
 header {
@@ -55,6 +69,14 @@ h1 {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px #000000;
+}
+
+main h2 {
+    color: #E45C34;
+}
+
+main p {
+    color: white;
 }
 
 /* DEBUG */
@@ -110,3 +132,21 @@ header .motto {
 }
 
 /* MAIN */
+
+main {
+    text-align: right;
+}
+
+main section {
+    background-color: #004775;
+}
+
+main .row-reverse {
+    text-align: left;
+}
+
+main .row {
+    padding: 100px 0;
+}
+
+/* FOOTER */
