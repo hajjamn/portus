@@ -122,11 +122,16 @@ header .row {
     height: 100%;
 }
 
-header .page-title {
+/* header .page-title {
     padding-top: 80px;
     font-size: 40px;
     letter-spacing: 12px;
     align-self: center;
+} */
+
+header .page-title {
+    max-width: 20vw;
+    padding-top: 75px;
 }
 
 header .nav {
