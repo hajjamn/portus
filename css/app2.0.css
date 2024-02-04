@@ -192,8 +192,11 @@ main .col-sm h2 {
 main .reservation {
     text-align: center;
     font-size: 60px;
-    font-style: italic;
     font-weight: 100;
+}
+
+main .underlined {
+    font-style: italic;
 }
 
 main .reservation-container {
@@ -201,3 +204,25 @@ main .reservation-container {
 }
 
 /* FOOTER */
+
+footer section {
+    padding-bottom: 100px;
+}
+
+footer .row {
+    justify-content: space-around;
+}
+
+footer [class^=col] {
+    margin: 0 20px;
+    max-width: calc(100% / 3 - 150px);
+}
+
+footer .col-33 * {
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 100;
+}
