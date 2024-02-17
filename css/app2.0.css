@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5 {
 
 /* UTILITIES */
 
+.text-align-center {
+    text-align: center;
+}
+
 .col-25 {
     width: 25%;
 }
@@ -122,23 +126,26 @@ header .row {
     height: 100%;
 }
 
-/* header .page-title {
-    padding-top: 80px;
-    font-size: 40px;
-    letter-spacing: 12px;
-    align-self: center;
-} */
-
 header .page-title {
-    max-width: 20vw;
-    padding-top: 75px;
+    max-width: 20%;
+    align-self: center;
+    margin-bottom: 150px;
 }
 
 header .nav {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-right: 50px;
     text-align: right;
     width: 20vw;
+}
+
+header .nav .hidden-menu {
+    display: none;
+    text-decoration: underline;
+}
+
+header .nav .hamburger-menu {
+    margin-left: 5px;
 }
 
 header .nav li {
@@ -170,14 +177,14 @@ main [class^=col] {
 
 main .col-sm {
     flex-grow: 1;
-    max-width: calc(100% / 3 - 100px);
+    width: calc(100% / 3 - 100px);
     margin-left: 20px;
     text-align: left;
 }
 
 main .col-lg {
     flex-grow: 2;
-    max-width: calc(2 * 100% / 3 - 100px);
+    width: calc(2 * 100% / 3 - 100px);
     margin: 0 auto;
 }
 
